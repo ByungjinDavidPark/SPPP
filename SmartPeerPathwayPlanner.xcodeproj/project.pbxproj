@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		FF59FA441CEC034F0027E751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA431CEC034F0027E751 /* main.m */; };
 		FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA461CEC034F0027E751 /* AppDelegate.m */; };
-		FF59FA4A1CEC034F0027E751 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA491CEC034F0027E751 /* FirstViewController.m */; };
-		FF59FA4D1CEC034F0027E751 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA4C1CEC034F0027E751 /* SecondViewController.m */; };
 		FF59FA501CEC034F0027E751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF59FA4E1CEC034F0027E751 /* Main.storyboard */; };
 		FF59FA521CEC034F0027E751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF59FA511CEC034F0027E751 /* Assets.xcassets */; };
 		FF59FA551CEC034F0027E751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF59FA531CEC034F0027E751 /* LaunchScreen.storyboard */; };
 		FF59FA601CEC034F0027E751 /* SmartPeerPathwayPlannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA5F1CEC034F0027E751 /* SmartPeerPathwayPlannerTests.m */; };
 		FF59FA6B1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA6A1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m */; };
+		FF59FA831CEC07A20027E751 /* CoursePlannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA821CEC07A20027E751 /* CoursePlannerController.m */; };
+		FF59FA881CEC0B3C0027E751 /* CourseBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */; };
+		FF59FA891CEC0B3C0027E751 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA871CEC0B3C0027E751 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +41,6 @@
 		FF59FA431CEC034F0027E751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF59FA451CEC034F0027E751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF59FA461CEC034F0027E751 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FF59FA481CEC034F0027E751 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FF59FA491CEC034F0027E751 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FF59FA4B1CEC034F0027E751 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FF59FA4C1CEC034F0027E751 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FF59FA4F1CEC034F0027E751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF59FA511CEC034F0027E751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF59FA541CEC034F0027E751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +51,12 @@
 		FF59FA661CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartPeerPathwayPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF59FA6A1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartPeerPathwayPlannerUITests.m; sourceTree = "<group>"; };
 		FF59FA6C1CEC034F0027E751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF59FA811CEC07A20027E751 /* CoursePlannerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursePlannerController.h; sourceTree = "<group>"; };
+		FF59FA821CEC07A20027E751 /* CoursePlannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursePlannerController.m; sourceTree = "<group>"; };
+		FF59FA841CEC0B3C0027E751 /* CourseBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseBrowserController.h; sourceTree = "<group>"; };
+		FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseBrowserController.m; sourceTree = "<group>"; };
+		FF59FA861CEC0B3C0027E751 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FF59FA871CEC0B3C0027E751 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +107,14 @@
 		FF59FA411CEC034F0027E751 /* SmartPeerPathwayPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				FF59FA841CEC0B3C0027E751 /* CourseBrowserController.h */,
+				FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */,
+				FF59FA861CEC0B3C0027E751 /* HomeViewController.h */,
+				FF59FA871CEC0B3C0027E751 /* HomeViewController.m */,
+				FF59FA811CEC07A20027E751 /* CoursePlannerController.h */,
+				FF59FA821CEC07A20027E751 /* CoursePlannerController.m */,
 				FF59FA451CEC034F0027E751 /* AppDelegate.h */,
 				FF59FA461CEC034F0027E751 /* AppDelegate.m */,
-				FF59FA481CEC034F0027E751 /* FirstViewController.h */,
-				FF59FA491CEC034F0027E751 /* FirstViewController.m */,
-				FF59FA4B1CEC034F0027E751 /* SecondViewController.h */,
-				FF59FA4C1CEC034F0027E751 /* SecondViewController.m */,
 				FF59FA4E1CEC034F0027E751 /* Main.storyboard */,
 				FF59FA511CEC034F0027E751 /* Assets.xcassets */,
 				FF59FA531CEC034F0027E751 /* LaunchScreen.storyboard */,
@@ -278,10 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF59FA4D1CEC034F0027E751 /* SecondViewController.m in Sources */,
 				FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */,
-				FF59FA4A1CEC034F0027E751 /* FirstViewController.m in Sources */,
 				FF59FA441CEC034F0027E751 /* main.m in Sources */,
+				FF59FA831CEC07A20027E751 /* CoursePlannerController.m in Sources */,
+				FF59FA891CEC0B3C0027E751 /* HomeViewController.m in Sources */,
+				FF59FA881CEC0B3C0027E751 /* CourseBrowserController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +513,7 @@
 				FF59FA711CEC034F0027E751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF59FA721CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				FF59FA741CEC034F0027E751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF59FA751CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +531,7 @@
 				FF59FA771CEC034F0027E751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  CoursePlannerController.m
 //  SmartPeerPathwayPlanner
 //
 //  Created by David Park on 18/05/16.
 //  Copyright © 2016 David Park. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "CoursePlannerController.h"
 
-@interface SecondViewController ()
+@interface CoursePlannerController()
 
 @end
 
-@implementation SecondViewController
+@implementation CoursePlannerController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

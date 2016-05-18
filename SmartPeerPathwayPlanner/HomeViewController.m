@@ -6,13 +6,13 @@
 //  Copyright © 2016 David Park. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "HomeViewController.h"
 
-@interface FirstViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
