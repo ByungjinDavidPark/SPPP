@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF59FA441CEC034F0027E751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA431CEC034F0027E751 /* main.m */; };
+		FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA461CEC034F0027E751 /* AppDelegate.m */; };
+		FF59FA4A1CEC034F0027E751 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA491CEC034F0027E751 /* FirstViewController.m */; };
+		FF59FA4D1CEC034F0027E751 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA4C1CEC034F0027E751 /* SecondViewController.m */; };
+		FF59FA501CEC034F0027E751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF59FA4E1CEC034F0027E751 /* Main.storyboard */; };
+		FF59FA521CEC034F0027E751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF59FA511CEC034F0027E751 /* Assets.xcassets */; };
+		FF59FA551CEC034F0027E751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF59FA531CEC034F0027E751 /* LaunchScreen.storyboard */; };
+		FF59FA601CEC034F0027E751 /* SmartPeerPathwayPlannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA5F1CEC034F0027E751 /* SmartPeerPathwayPlannerTests.m */; };
+		FF59FA6B1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA6A1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF59FA5C1CEC034F0027E751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF59FA371CEC034F0027E751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF59FA3E1CEC034F0027E751;
+			remoteInfo = SmartPeerPathwayPlanner;
+		};
+		FF59FA671CEC034F0027E751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF59FA371CEC034F0027E751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF59FA3E1CEC034F0027E751;
+			remoteInfo = SmartPeerPathwayPlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF59FA3F1CEC034F0027E751 /* SmartPeerPathwayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPeerPathwayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF59FA431CEC034F0027E751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF59FA451CEC034F0027E751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF59FA461CEC034F0027E751 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF59FA481CEC034F0027E751 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		FF59FA491CEC034F0027E751 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		FF59FA4B1CEC034F0027E751 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FF59FA4C1CEC034F0027E751 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FF59FA4F1CEC034F0027E751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF59FA511CEC034F0027E751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF59FA541CEC034F0027E751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF59FA561CEC034F0027E751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF59FA5B1CEC034F0027E751 /* SmartPeerPathwayPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartPeerPathwayPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF59FA5F1CEC034F0027E751 /* SmartPeerPathwayPlannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartPeerPathwayPlannerTests.m; sourceTree = "<group>"; };
+		FF59FA611CEC034F0027E751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF59FA661CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartPeerPathwayPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF59FA6A1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartPeerPathwayPlannerUITests.m; sourceTree = "<group>"; };
+		FF59FA6C1CEC034F0027E751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF59FA3C1CEC034F0027E751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF59FA581CEC034F0027E751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF59FA631CEC034F0027E751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF59FA361CEC034F0027E751 = {
+			isa = PBXGroup;
+			children = (
+				FF59FA411CEC034F0027E751 /* SmartPeerPathwayPlanner */,
+				FF59FA5E1CEC034F0027E751 /* SmartPeerPathwayPlannerTests */,
+				FF59FA691CEC034F0027E751 /* SmartPeerPathwayPlannerUITests */,
+				FF59FA401CEC034F0027E751 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF59FA401CEC034F0027E751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA3F1CEC034F0027E751 /* SmartPeerPathwayPlanner.app */,
+				FF59FA5B1CEC034F0027E751 /* SmartPeerPathwayPlannerTests.xctest */,
+				FF59FA661CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF59FA411CEC034F0027E751 /* SmartPeerPathwayPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA451CEC034F0027E751 /* AppDelegate.h */,
+				FF59FA461CEC034F0027E751 /* AppDelegate.m */,
+				FF59FA481CEC034F0027E751 /* FirstViewController.h */,
+				FF59FA491CEC034F0027E751 /* FirstViewController.m */,
+				FF59FA4B1CEC034F0027E751 /* SecondViewController.h */,
+				FF59FA4C1CEC034F0027E751 /* SecondViewController.m */,
+				FF59FA4E1CEC034F0027E751 /* Main.storyboard */,
+				FF59FA511CEC034F0027E751 /* Assets.xcassets */,
+				FF59FA531CEC034F0027E751 /* LaunchScreen.storyboard */,
+				FF59FA561CEC034F0027E751 /* Info.plist */,
+				FF59FA421CEC034F0027E751 /* Supporting Files */,
+			);
+			path = SmartPeerPathwayPlanner;
+			sourceTree = "<group>";
+		};
+		FF59FA421CEC034F0027E751 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA431CEC034F0027E751 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF59FA5E1CEC034F0027E751 /* SmartPeerPathwayPlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA5F1CEC034F0027E751 /* SmartPeerPathwayPlannerTests.m */,
+				FF59FA611CEC034F0027E751 /* Info.plist */,
+			);
+			path = SmartPeerPathwayPlannerTests;
+			sourceTree = "<group>";
+		};
+		FF59FA691CEC034F0027E751 /* SmartPeerPathwayPlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA6A1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m */,
+				FF59FA6C1CEC034F0027E751 /* Info.plist */,
+			);
+			path = SmartPeerPathwayPlannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF59FA3E1CEC034F0027E751 /* SmartPeerPathwayPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF59FA6F1CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlanner" */;
+			buildPhases = (
+				FF59FA3B1CEC034F0027E751 /* Sources */,
+				FF59FA3C1CEC034F0027E751 /* Frameworks */,
+				FF59FA3D1CEC034F0027E751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartPeerPathwayPlanner;
+			productName = SmartPeerPathwayPlanner;
+			productReference = FF59FA3F1CEC034F0027E751 /* SmartPeerPathwayPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF59FA5A1CEC034F0027E751 /* SmartPeerPathwayPlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF59FA721CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlannerTests" */;
+			buildPhases = (
+				FF59FA571CEC034F0027E751 /* Sources */,
+				FF59FA581CEC034F0027E751 /* Frameworks */,
+				FF59FA591CEC034F0027E751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF59FA5D1CEC034F0027E751 /* PBXTargetDependency */,
+			);
+			name = SmartPeerPathwayPlannerTests;
+			productName = SmartPeerPathwayPlannerTests;
+			productReference = FF59FA5B1CEC034F0027E751 /* SmartPeerPathwayPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF59FA651CEC034F0027E751 /* SmartPeerPathwayPlannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF59FA751CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlannerUITests" */;
+			buildPhases = (
+				FF59FA621CEC034F0027E751 /* Sources */,
+				FF59FA631CEC034F0027E751 /* Frameworks */,
+				FF59FA641CEC034F0027E751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF59FA681CEC034F0027E751 /* PBXTargetDependency */,
+			);
+			name = SmartPeerPathwayPlannerUITests;
+			productName = SmartPeerPathwayPlannerUITests;
+			productReference = FF59FA661CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF59FA371CEC034F0027E751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "David Park";
+				TargetAttributes = {
+					FF59FA3E1CEC034F0027E751 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SSE6XVAREE;
+					};
+					FF59FA5A1CEC034F0027E751 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SSE6XVAREE;
+						TestTargetID = FF59FA3E1CEC034F0027E751;
+					};
+					FF59FA651CEC034F0027E751 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SSE6XVAREE;
+						TestTargetID = FF59FA3E1CEC034F0027E751;
+					};
+				};
+			};
+			buildConfigurationList = FF59FA3A1CEC034F0027E751 /* Build configuration list for PBXProject "SmartPeerPathwayPlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF59FA361CEC034F0027E751;
+			productRefGroup = FF59FA401CEC034F0027E751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF59FA3E1CEC034F0027E751 /* SmartPeerPathwayPlanner */,
+				FF59FA5A1CEC034F0027E751 /* SmartPeerPathwayPlannerTests */,
+				FF59FA651CEC034F0027E751 /* SmartPeerPathwayPlannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF59FA3D1CEC034F0027E751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF59FA551CEC034F0027E751 /* LaunchScreen.storyboard in Resources */,
+				FF59FA521CEC034F0027E751 /* Assets.xcassets in Resources */,
+				FF59FA501CEC034F0027E751 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF59FA591CEC034F0027E751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF59FA641CEC034F0027E751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF59FA3B1CEC034F0027E751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF59FA4D1CEC034F0027E751 /* SecondViewController.m in Sources */,
+				FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */,
+				FF59FA4A1CEC034F0027E751 /* FirstViewController.m in Sources */,
+				FF59FA441CEC034F0027E751 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF59FA571CEC034F0027E751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF59FA601CEC034F0027E751 /* SmartPeerPathwayPlannerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF59FA621CEC034F0027E751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF59FA6B1CEC034F0027E751 /* SmartPeerPathwayPlannerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF59FA5D1CEC034F0027E751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF59FA3E1CEC034F0027E751 /* SmartPeerPathwayPlanner */;
+			targetProxy = FF59FA5C1CEC034F0027E751 /* PBXContainerItemProxy */;
+		};
+		FF59FA681CEC034F0027E751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF59FA3E1CEC034F0027E751 /* SmartPeerPathwayPlanner */;
+			targetProxy = FF59FA671CEC034F0027E751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF59FA4E1CEC034F0027E751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF59FA4F1CEC034F0027E751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF59FA531CEC034F0027E751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF59FA541CEC034F0027E751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF59FA6D1CEC034F0027E751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF59FA6E1CEC034F0027E751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF59FA701CEC034F0027E751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartPeerPathwayPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpark.SmartPeerPathwayPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF59FA711CEC034F0027E751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartPeerPathwayPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpark.SmartPeerPathwayPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF59FA731CEC034F0027E751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartPeerPathwayPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpark.SmartPeerPathwayPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartPeerPathwayPlanner.app/SmartPeerPathwayPlanner";
+			};
+			name = Debug;
+		};
+		FF59FA741CEC034F0027E751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartPeerPathwayPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpark.SmartPeerPathwayPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartPeerPathwayPlanner.app/SmartPeerPathwayPlanner";
+			};
+			name = Release;
+		};
+		FF59FA761CEC034F0027E751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartPeerPathwayPlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpark.SmartPeerPathwayPlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartPeerPathwayPlanner;
+			};
+			name = Debug;
+		};
+		FF59FA771CEC034F0027E751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartPeerPathwayPlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpark.SmartPeerPathwayPlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartPeerPathwayPlanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF59FA3A1CEC034F0027E751 /* Build configuration list for PBXProject "SmartPeerPathwayPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF59FA6D1CEC034F0027E751 /* Debug */,
+				FF59FA6E1CEC034F0027E751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF59FA6F1CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF59FA701CEC034F0027E751 /* Debug */,
+				FF59FA711CEC034F0027E751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF59FA721CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF59FA731CEC034F0027E751 /* Debug */,
+				FF59FA741CEC034F0027E751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF59FA751CEC034F0027E751 /* Build configuration list for PBXNativeTarget "SmartPeerPathwayPlannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF59FA761CEC034F0027E751 /* Debug */,
+				FF59FA771CEC034F0027E751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF59FA371CEC034F0027E751 /* Project object */;
+}
