@@ -26,7 +26,7 @@
     
     UINavigationController *parent = (UINavigationController *)self.window.rootViewController;
     
-    CourseBrowserController *controller = (CourseBrowserController *)parent.topViewController;
+    CourseBrowserController *controller = (CourseBrowserController *)parent.inputViewController;
     controller.managedObjectContext = self.managedObjectContext;
     
     

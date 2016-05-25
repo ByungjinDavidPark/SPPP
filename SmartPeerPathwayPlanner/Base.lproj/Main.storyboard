@@ -32,6 +32,24 @@
             </objects>
             <point key="canvasLocation" x="1878" y="402"/>
         </scene>
+        <!--Login-->
+        <scene sceneID="BAQ-im-Gq0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rd9-NH-cTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Login" id="lKY-Ad-Ul0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8B6-va-l3i"/>
+                        <viewControllerLayoutGuide type="bottom" id="tRb-rz-KSj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AhF-NP-FSi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="76" y="-932"/>
+        </scene>
         <!--Home-->
         <scene sceneID="MeA-KY-Zb0">
             <objects>
