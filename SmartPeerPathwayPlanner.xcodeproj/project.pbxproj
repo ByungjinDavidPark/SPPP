@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF2C5F551CF5218300C9DA42 /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */; };
+		FF52246F1CF46884001FA3B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF52246E1CF46884001FA3B6 /* CoreData.framework */; };
+		FF5224721CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF5224701CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld */; };
+		FF5224781CF46B1F001FA3B6 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5224761CF46B1F001FA3B6 /* Course.m */; };
 		FF59FA441CEC034F0027E751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA431CEC034F0027E751 /* main.m */; };
 		FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA461CEC034F0027E751 /* AppDelegate.m */; };
 		FF59FA501CEC034F0027E751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF59FA4E1CEC034F0027E751 /* Main.storyboard */; };
@@ -18,6 +22,17 @@
 		FF59FA881CEC0B3C0027E751 /* CourseBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */; };
 		FF59FA891CEC0B3C0027E751 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA871CEC0B3C0027E751 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		FF52246D1CF4684C001FA3B6 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		FF59FA5C1CEC034F0027E751 /* PBXContainerItemProxy */ = {
@@ -37,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF2C5F531CF5218300C9DA42 /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FF52246E1CF46884001FA3B6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FF5224711CF4691C001FA3B6 /* CourseDirectory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CourseDirectory.xcdatamodel; sourceTree = "<group>"; };
+		FF5224751CF46B1F001FA3B6 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		FF5224761CF46B1F001FA3B6 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		FF59FA3F1CEC034F0027E751 /* SmartPeerPathwayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPeerPathwayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF59FA431CEC034F0027E751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF59FA451CEC034F0027E751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF52246F1CF46884001FA3B6 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +106,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF52246A1CF46680001FA3B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF5224751CF46B1F001FA3B6 /* Course.h */,
+				FF5224761CF46B1F001FA3B6 /* Course.m */,
+				FF2C5F531CF5218300C9DA42 /* Course+CoreDataProperties.h */,
+				FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF52246B1CF46687001FA3B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA4E1CEC034F0027E751 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF52246C1CF46692001FA3B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA841CEC0B3C0027E751 /* CourseBrowserController.h */,
+				FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */,
+				FF59FA861CEC0B3C0027E751 /* HomeViewController.h */,
+				FF59FA871CEC0B3C0027E751 /* HomeViewController.m */,
+				FF59FA811CEC07A20027E751 /* CoursePlannerController.h */,
+				FF59FA821CEC07A20027E751 /* CoursePlannerController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		FF59FA361CEC034F0027E751 = {
 			isa = PBXGroup;
 			children = (
+				FF52246E1CF46884001FA3B6 /* CoreData.framework */,
 				FF59FA411CEC034F0027E751 /* SmartPeerPathwayPlanner */,
 				FF59FA5E1CEC034F0027E751 /* SmartPeerPathwayPlannerTests */,
 				FF59FA691CEC034F0027E751 /* SmartPeerPathwayPlannerUITests */,
@@ -107,19 +162,16 @@
 		FF59FA411CEC034F0027E751 /* SmartPeerPathwayPlanner */ = {
 			isa = PBXGroup;
 			children = (
-				FF59FA841CEC0B3C0027E751 /* CourseBrowserController.h */,
-				FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */,
-				FF59FA861CEC0B3C0027E751 /* HomeViewController.h */,
-				FF59FA871CEC0B3C0027E751 /* HomeViewController.m */,
-				FF59FA811CEC07A20027E751 /* CoursePlannerController.h */,
-				FF59FA821CEC07A20027E751 /* CoursePlannerController.m */,
+				FF52246C1CF46692001FA3B6 /* Controller */,
+				FF52246B1CF46687001FA3B6 /* View */,
+				FF52246A1CF46680001FA3B6 /* Model */,
 				FF59FA451CEC034F0027E751 /* AppDelegate.h */,
 				FF59FA461CEC034F0027E751 /* AppDelegate.m */,
-				FF59FA4E1CEC034F0027E751 /* Main.storyboard */,
 				FF59FA511CEC034F0027E751 /* Assets.xcassets */,
 				FF59FA531CEC034F0027E751 /* LaunchScreen.storyboard */,
 				FF59FA561CEC034F0027E751 /* Info.plist */,
 				FF59FA421CEC034F0027E751 /* Supporting Files */,
+				FF5224701CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld */,
 			);
 			path = SmartPeerPathwayPlanner;
 			sourceTree = "<group>";
@@ -162,6 +214,7 @@
 				FF59FA3D1CEC034F0027E751 /* Resources */,
 			);
 			buildRules = (
+				FF52246D1CF4684C001FA3B6 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -285,7 +338,10 @@
 			files = (
 				FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */,
 				FF59FA441CEC034F0027E751 /* main.m in Sources */,
+				FF2C5F551CF5218300C9DA42 /* Course+CoreDataProperties.m in Sources */,
+				FF5224721CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld in Sources */,
 				FF59FA831CEC07A20027E751 /* CoursePlannerController.m in Sources */,
+				FF5224781CF46B1F001FA3B6 /* Course.m in Sources */,
 				FF59FA891CEC0B3C0027E751 /* HomeViewController.m in Sources */,
 				FF59FA881CEC0B3C0027E751 /* CourseBrowserController.m in Sources */,
 			);
@@ -534,6 +590,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF5224701CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF5224711CF4691C001FA3B6 /* CourseDirectory.xcdatamodel */,
+			);
+			currentVersion = FF5224711CF4691C001FA3B6 /* CourseDirectory.xcdatamodel */;
+			path = CourseDirectory.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FF59FA371CEC034F0027E751 /* Project object */;
 }

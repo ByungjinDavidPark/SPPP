@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface CourseBrowserController: UIViewController
+@interface CourseBrowserController: UITableViewController <NSFetchedResultsControllerDelegate>
 
+@property (strong, nonatomic) IBOutlet UITableView *browserTableView;
+
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
 
