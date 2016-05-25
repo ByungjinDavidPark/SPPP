@@ -40,7 +40,11 @@
         }
         
         // Add sample data
-        [self addCourse:@1 courseName:@"Test1" courseIdentifier:@"Test2" courseLevel:@5 compulsory:@"Test coom" courseTopic:@"This is test" courseCredit:@15 coursePreRequistes:@"Test coom" courseAim:@"Test"];
+        [self addCourse:@1 courseName:@"Hardware Fundamentals" courseIdentifier:@"ISCG5400" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"Test"];
+        
+        [self addCourse:@2 courseName:@"Programming Fundamentals" courseIdentifier:@"ISCG5420" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To introduce students to the basic principles of designing and developing small computer programs within the context of programming language"];
+        
+        [self addCourse:@3 courseName:@"Hardware Fundamentals " courseIdentifier:@"ISCG5400" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"Test"];
         
         
     }
@@ -141,8 +145,6 @@ courseAim:(NSString *)courseAim
 
 // Returns the persistent store coordinator for the application.
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
-
-
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
     if (_persistentStoreCoordinator != nil) {
@@ -177,12 +179,15 @@ courseAim:(NSString *)courseAim
          Lightweight migration will only work for a limited set of schema changes; consult "Core Data Model Versioning and Data Migration Programming Guide" for details.
          
          */
-        //NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        //abort();
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+
+
     }
     
     return _persistentStoreCoordinator;
 }
+
 #pragma mark - Application's Documents directory
 
 // Returns the URL to the application's Documents directory.
