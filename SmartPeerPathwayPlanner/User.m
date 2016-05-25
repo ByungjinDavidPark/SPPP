@@ -10,6 +10,22 @@
 
 @implementation User
 
-// Insert code here to add functionality to your managed object subclass
+- (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password{
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"loginActionFinished" object:self userInfo:nil];
+}
+
+- (BOOL)userAuthenticated {
+    
+    // This variable is only for testing
+    // Here you have to implement a mechanism to manipulate this
+    BOOL auth = NO;
+    
+    if (auth) {
+        return YES;
+    }
+    
+    return NO;
+}
 
 @end
