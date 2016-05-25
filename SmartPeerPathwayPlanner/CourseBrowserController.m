@@ -87,6 +87,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    /*
     Course *course = nil;
     if (self.searchDisplayController.isActive)
     {
@@ -95,7 +96,7 @@
     } else {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         course = [self.courses objectAtIndex:indexPath.row];
-    }
+    }*/
     
 //    DetailViewController *detailVC = [segue destinationViewController];
 //    

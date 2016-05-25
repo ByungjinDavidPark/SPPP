@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D8FEDAF1CF543CF00B13A5A /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FEDAC1CF543CF00B13A5A /* User+CoreDataProperties.m */; };
+		3D8FEDB01CF543CF00B13A5A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FEDAE1CF543CF00B13A5A /* User.m */; };
 		FF2C5F551CF5218300C9DA42 /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */; };
 		FF52246F1CF46884001FA3B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF52246E1CF46884001FA3B6 /* CoreData.framework */; };
 		FF5224721CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF5224701CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld */; };
@@ -52,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D8FEDAB1CF543CF00B13A5A /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3D8FEDAC1CF543CF00B13A5A /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3D8FEDAD1CF543CF00B13A5A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3D8FEDAE1CF543CF00B13A5A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		FF2C5F531CF5218300C9DA42 /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataProperties.h"; sourceTree = "<group>"; };
 		FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FF52246E1CF46884001FA3B6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -113,6 +119,10 @@
 				FF5224761CF46B1F001FA3B6 /* Course.m */,
 				FF2C5F531CF5218300C9DA42 /* Course+CoreDataProperties.h */,
 				FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */,
+				3D8FEDAB1CF543CF00B13A5A /* User+CoreDataProperties.h */,
+				3D8FEDAC1CF543CF00B13A5A /* User+CoreDataProperties.m */,
+				3D8FEDAD1CF543CF00B13A5A /* User.h */,
+				3D8FEDAE1CF543CF00B13A5A /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -336,9 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8FEDB01CF543CF00B13A5A /* User.m in Sources */,
 				FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */,
 				FF59FA441CEC034F0027E751 /* main.m in Sources */,
 				FF2C5F551CF5218300C9DA42 /* Course+CoreDataProperties.m in Sources */,
+				3D8FEDAF1CF543CF00B13A5A /* User+CoreDataProperties.m in Sources */,
 				FF5224721CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld in Sources */,
 				FF59FA831CEC07A20027E751 /* CoursePlannerController.m in Sources */,
 				FF5224781CF46B1F001FA3B6 /* Course.m in Sources */,
