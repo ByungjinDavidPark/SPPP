@@ -8,6 +8,7 @@
 
 #import "CourseBrowserController.h"
 #import "Course.h"
+#import "AppDelegate.h"
 
 @interface CourseBrowserController() <UISearchDisplayDelegate, UISearchBarDelegate>
 
@@ -24,8 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     NSManagedObjectContext *moc = [self managedObjectContext];
+    
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Course"
                                                          inManagedObjectContext:moc];
     

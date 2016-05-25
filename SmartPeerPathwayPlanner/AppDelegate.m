@@ -24,10 +24,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    UINavigationController *parent = (UINavigationController *)self.window.rootViewController;
+    UITabBarController *parent = (UITabBarController *)self.window.rootViewController;
     
-    CourseBrowserController *controller = (CourseBrowserController *)parent.inputViewController;
+    CourseBrowserController *controller = (CourseBrowserController *)parent.viewControllers[1];
     controller.managedObjectContext = self.managedObjectContext;
+    
     
     
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
@@ -117,8 +118,7 @@ courseAim:(NSString *)courseAim
     
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        //_managedObjectContext = [[NSManagedObjectContext alloc] init];
-        _managedObjectContext = [_managedObjectContext initWithConcurrencyType: NSMainQueueConcurrencyType];
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
         [_managedObjectContext setPersistentStoreCoordinator:coordinator];
         NSLog(@"coordinator");
     }
