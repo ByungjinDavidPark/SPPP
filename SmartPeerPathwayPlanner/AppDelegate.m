@@ -40,11 +40,7 @@
         }
         
         // Add sample data
-        [self addCourse:@1 courseName:@"Hardware Fundamentals" courseIdentifier:@"ISCG5400" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"Test"];
-        
-        [self addCourse:@2 courseName:@"Programming Fundamentals" courseIdentifier:@"ISCG5420" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To introduce students to the basic principles of designing and developing small computer programs within the context of programming language"];
-        
-        [self addCourse:@3 courseName:@"Hardware Fundamentals " courseIdentifier:@"ISCG5400" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"Test"];
+        [self addCourse:@1 courseName:@"Test1" courseIdentifier:@"Test2" courseLevel:@5 compulsory:@"Test coom" courseTopic:@"This is test" courseCredit:@15 coursePreRequistes:@"Test coom" courseAim:@"Test"];
         
         
     }
