@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wtZ-cv-tsA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lKY-Ad-Ul0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--Course Planner-->
         <scene sceneID="2SI-Gi-AvQ">
             <objects>
-                <viewController title="Course Planner" id="5Ar-oW-h8z" customClass="CoursePlannerController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoursePlannerController" title="Course Planner" id="5Ar-oW-h8z" customClass="CoursePlannerController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="htZ-HY-C6z"/>
                         <viewControllerLayoutGuide type="bottom" id="IMl-h7-1JL"/>
@@ -35,8 +35,7 @@
         <!--Login-->
         <scene sceneID="BAQ-im-Gq0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rd9-NH-cTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Login" id="lKY-Ad-Ul0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" title="Login" id="lKY-Ad-Ul0" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8B6-va-l3i"/>
                         <viewControllerLayoutGuide type="bottom" id="tRb-rz-KSj"/>
@@ -44,16 +43,52 @@
                     <view key="view" contentMode="scaleToFill" id="AhF-NP-FSi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yac-HY-Xu8">
+                                <rect key="frame" x="0.0" y="235" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAW-Fo-rtI">
+                                <rect key="frame" x="0.0" y="264" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKg-GM-fzz">
+                                <rect key="frame" x="20" y="317" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.52549019610000003" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LPr-2e-TkL"/>
+                                    <constraint firstAttribute="width" constant="560" id="cXu-mM-SkI"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Sign In"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-6Y-Elt">
+                                <rect key="frame" x="20" y="361" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.52549019610000003" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Not registered yet? Register now"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLL-09-1Zk">
+                                <rect key="frame" x="0.0" y="28" width="600" height="206"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yac-HY-Xu8" firstAttribute="top" secondItem="8B6-va-l3i" secondAttribute="bottom" constant="215" id="Oag-5R-am5"/>
+                            <constraint firstItem="xAW-Fo-rtI" firstAttribute="top" secondItem="8B6-va-l3i" secondAttribute="bottom" constant="244" id="oUF-Fl-KmY"/>
+                        </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rd9-NH-cTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76" y="-932"/>
         </scene>
         <!--Home-->
         <scene sceneID="MeA-KY-Zb0">
             <objects>
-                <viewController title="Home" id="gdR-ny-X5V" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeController" title="Home" id="gdR-ny-X5V" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vCX-Sc-x6j"/>
                         <viewControllerLayoutGuide type="bottom" id="Nv2-Yv-PFU"/>
@@ -80,7 +115,7 @@
         <!--Browser Course-->
         <scene sceneID="eEi-gl-ci4">
             <objects>
-                <viewController title="Browser Course" id="UOs-1a-Kma" customClass="CourseBrowserController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BrowserCourseController" title="Browser Course" id="UOs-1a-Kma" customClass="CourseBrowserController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" id="IEa-oo-ZSy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -136,7 +171,7 @@
         <!--Course Detail-->
         <scene sceneID="oAk-sl-vCi">
             <objects>
-                <viewController title="Course Detail" id="MPu-cN-VoP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CourseDetailController" title="Course Detail" id="MPu-cN-VoP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MIV-KG-aal"/>
                         <viewControllerLayoutGuide type="bottom" id="1c5-Wa-7G4"/>
@@ -155,7 +190,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1QK-Zg-rgt">
             <objects>
-                <navigationController id="wtZ-cv-tsA" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" id="wtZ-cv-tsA" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4W1-v1-dbH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -171,7 +206,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="dDF-ps-tY5"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">

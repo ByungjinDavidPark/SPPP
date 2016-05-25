@@ -141,6 +141,8 @@ courseAim:(NSString *)courseAim
 
 // Returns the persistent store coordinator for the application.
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
+
+
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
     if (_persistentStoreCoordinator != nil) {
@@ -175,13 +177,12 @@ courseAim:(NSString *)courseAim
          Lightweight migration will only work for a limited set of schema changes; consult "Core Data Model Versioning and Data Migration Programming Guide" for details.
          
          */
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
+        //NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        //abort();
     }
     
     return _persistentStoreCoordinator;
 }
-
 #pragma mark - Application's Documents directory
 
 // Returns the URL to the application's Documents directory.
