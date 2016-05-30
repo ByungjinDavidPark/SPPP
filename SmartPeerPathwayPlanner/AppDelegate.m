@@ -26,9 +26,12 @@
     
     UITabBarController *parent = (UITabBarController *)self.window.rootViewController;
     
-    CourseBrowserController *controller = (CourseBrowserController *)parent.viewControllers[1];
-    controller.managedObjectContext = self.managedObjectContext;
+    UINavigationController *navi = (UINavigationController *)parent.viewControllers[1];
     
+    CourseBrowserController *controller = (CourseBrowserController *)navi.topViewController;
+    
+    controller.managedObjectContext = self.managedObjectContext;
+
     
     
     if(![[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
@@ -40,11 +43,34 @@
         }
         
         // Add sample data
+        
+        //level 5
         [self addCourse:@1 courseName:@"Hardware Fundamentals" courseIdentifier:@"ISCG5400" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"Test"];
         
-        [self addCourse:@2 courseName:@"Programming Fundamentals" courseIdentifier:@"ISCG5420" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To introduce students to the basic principles of designing and developing small computer programs within the context of programming language"];
+        [self addCourse:@2 courseName:@"Programming Fundamentals" courseIdentifier:@"ISCG5420" courseLevel:@5 compulsory:@"Yes" courseTopic:@"classes, objects, methods, properties, data types decisions, iterations, arrays, text files, logic depiction" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To introduce students to the basic principles of designing and developing small computer programs within the context of programming language"];
         
-        [self addCourse:@3 courseName:@"Hardware Fundamentals " courseIdentifier:@"ISCG5400" courseLevel:@5 compulsory:@"Yes" courseTopic:@"description function and selection of a wide range of computer hardware components, identifying and configuring hardware resources, describing preventative maintainance of computer hardware, current and emerging trends on Information Technology" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"Test"];
+        [self addCourse:@3 courseName:@"Programming Principles and Practice" courseIdentifier:@"ISCG5421" courseLevel:@5 compulsory:@"No" courseTopic:@"classes, objects, methods, properties, data types, decisions, iterations, static and dynamic data structures, graphical user interfaces, inheritance, event-driven programming, text files & binary files, database connection" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To advance the knowledge of programming beyond an introductory level, in the context of a programming language."];
+        
+        // level 6
+        
+        [self addCourse:@4 courseName:@"Project Planning and Control" courseIdentifier:@"ISCG6411" courseLevel:@6 compulsory:@"Yes" courseTopic:@"identification of the range of requirements for a small IT project, application of these requirements" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To provide students with a knowledge of the requirements of project planning by using project management techniques and tools, monitoring and controlling projects, using project management software, and applying reviewing techniques."];
+        
+        [self addCourse:@5 courseName:@"GUI Programming" courseIdentifier:@"ISCG6421" courseLevel:@6 compulsory:@"No" courseTopic:@"ideveloping and integrating forms, controls and events, integrating with databases, SQL querying, report generation" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To provide the student with the concepts of and practice in the use of event driven programming in the context of a selected language and a standard interface using windows, icons, menus and pointers"];
+        
+        [self addCourse:@6 courseName:@"Data Structures and Algorithms" courseIdentifier:@"ISCG6426" courseLevel:@6 compulsory:@"Yes" courseTopic:@"Topics may include Sorting,Bubble Sort, Insertion Sort, Searching, Brute Force Search, Binary Search, Linked Lists, Stacks, Queues, Binary Trees, Depth First Search, Breadth First Search, Recursion, Hash Tables, Divide and Conquer, Backtracking" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"This course introduces the fundamental data structures and algorithms used in software development, extending the object-oriented concepts taught in the pre-requisite subject Programming Principles and Practice. The course will cover searching and sorting, linked data structures such lists and trees as well as hash tables. Upon completion of this course students will be able to implement a variety of data structures and algorithms, and will have an expert knowledge of the scalability and design trade-offs of these algorithms"];
+        
+        // level 7
+        
+        [self addCourse:@7 courseName:@"Capstone Project" courseIdentifier:@"ISCG7431" courseLevel:@7 compulsory:@"Yes" courseTopic:@"Solving a realistic business problem in the relevant Computing area of study, working closely with sponsoring organisation and supervisor to understand and solve the problem, evidence of project management and the processes" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To provide students with the opportunity to research, select, integrate, and apply a range of techniques and technology in the solution of a complete realistic problem. Wherever possible students should undertake a project on behalf of a client or situated in an industrial or business environment."];
+
+        
+        [self addCourse:@8 courseName:@"Java Enterprise Programming" courseIdentifier:@"ISCG7425" courseLevel:@7 compulsory:@"No" courseTopic:@"Java Language and Syntax Review, J2EE, Hibernate and Object Relational Mappings, Spring and other J2EE containers, Application Servers, Enterprise Service Bus and Mule, Model View Controllers and Struts, Java Server Faces" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To critically review the concepts of enterprise component based programming with the Java programming language. The course will comprehensively examine a range of enterprise technologies and frameworks such as Hibernate, Spring, Struts and Java beans. The subject will also cover RMI and socket programming, and the development of a graphical user interface using the Java Swing library."];
+
+        
+        [self addCourse:@9 courseName:@"Data Mining" courseIdentifier:@"ISCG7426" courseLevel:@7 compulsory:@"No" courseTopic:@"iIntroduction to data concepts (data types, attributes etc), Data preparation methods (Data cleansing, Feature Selection etc), Data mining techniques (Clustering, Association rules, Ensemble Learning and Regressions etc) and Evaluation methods" courseCredit:@15 coursePreRequistes:@"Restriction: ISCG5232" courseAim:@"To provide students with the knowledge, tools and techniques required for mining complex data sets and to present the results to non-technical audiences."];
+
+        
+        
         
         
     }

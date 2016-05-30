@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
 		3DCF721C1CF552C70093B258 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF72191CF552C70093B258 /* User+CoreDataProperties.m */; };
 		3DCF721D1CF552C70093B258 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF721B1CF552C70093B258 /* User.m */; };
+=======
+		FF0F3C371CFC95F20020D89A /* StackLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0F3C361CFC95F20020D89A /* StackLabel.m */; };
+>>>>>>> Stashed changes
 		FF2C5F551CF5218300C9DA42 /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */; };
 		FF52246F1CF46884001FA3B6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF52246E1CF46884001FA3B6 /* CoreData.framework */; };
 		FF5224721CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF5224701CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld */; };
@@ -23,6 +27,9 @@
 		FF59FA831CEC07A20027E751 /* CoursePlannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA821CEC07A20027E751 /* CoursePlannerController.m */; };
 		FF59FA881CEC0B3C0027E751 /* CourseBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */; };
 		FF59FA891CEC0B3C0027E751 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59FA871CEC0B3C0027E751 /* HomeViewController.m */; };
+		FF83B00E1CF55A4F0037FBDF /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF83B00D1CF55A4F0037FBDF /* CourseDetailViewController.m */; };
+		FF88095A1CFC6E8E00404B86 /* BrowserTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8809591CFC6E8E00404B86 /* BrowserTableCell.xib */; };
+		FF88095D1CFC702000404B86 /* BrowserTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF88095C1CFC702000404B86 /* BrowserTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -54,10 +61,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< Updated upstream
 		3DCF72181CF552C70093B258 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
 		3DCF72191CF552C70093B258 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
 		3DCF721A1CF552C70093B258 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		3DCF721B1CF552C70093B258 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+=======
+		FF0F3C351CFC95F20020D89A /* StackLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackLabel.h; sourceTree = "<group>"; };
+		FF0F3C361CFC95F20020D89A /* StackLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLabel.m; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		FF2C5F531CF5218300C9DA42 /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataProperties.h"; sourceTree = "<group>"; };
 		FF2C5F541CF5218300C9DA42 /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataProperties.m"; sourceTree = "<group>"; };
 		FF52246E1CF46884001FA3B6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -84,6 +96,11 @@
 		FF59FA851CEC0B3C0027E751 /* CourseBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseBrowserController.m; sourceTree = "<group>"; };
 		FF59FA861CEC0B3C0027E751 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FF59FA871CEC0B3C0027E751 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FF83B00C1CF55A4F0037FBDF /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
+		FF83B00D1CF55A4F0037FBDF /* CourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailViewController.m; sourceTree = "<group>"; };
+		FF8809591CFC6E8E00404B86 /* BrowserTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserTableCell.xib; sourceTree = "<group>"; };
+		FF88095B1CFC702000404B86 /* BrowserTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserTableCell.h; sourceTree = "<group>"; };
+		FF88095C1CFC702000404B86 /* BrowserTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF0F3C341CFC95AA0020D89A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FF59FA4E1CEC034F0027E751 /* Main.storyboard */,
+				FF8809591CFC6E8E00404B86 /* BrowserTableCell.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		FF52246A1CF46680001FA3B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +156,10 @@
 		FF52246B1CF46687001FA3B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FF59FA4E1CEC034F0027E751 /* Main.storyboard */,
+				FF88095B1CFC702000404B86 /* BrowserTableCell.h */,
+				FF88095C1CFC702000404B86 /* BrowserTableCell.m */,
+				FF0F3C351CFC95F20020D89A /* StackLabel.h */,
+				FF0F3C361CFC95F20020D89A /* StackLabel.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -144,6 +173,8 @@
 				FF59FA871CEC0B3C0027E751 /* HomeViewController.m */,
 				FF59FA811CEC07A20027E751 /* CoursePlannerController.h */,
 				FF59FA821CEC07A20027E751 /* CoursePlannerController.m */,
+				FF83B00C1CF55A4F0037FBDF /* CourseDetailViewController.h */,
+				FF83B00D1CF55A4F0037FBDF /* CourseDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -172,6 +203,7 @@
 		FF59FA411CEC034F0027E751 /* SmartPeerPathwayPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F3C341CFC95AA0020D89A /* Storyboards */,
 				FF52246C1CF46692001FA3B6 /* Controller */,
 				FF52246B1CF46687001FA3B6 /* View */,
 				FF52246A1CF46680001FA3B6 /* Model */,
@@ -320,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF59FA551CEC034F0027E751 /* LaunchScreen.storyboard in Resources */,
+				FF88095A1CFC6E8E00404B86 /* BrowserTableCell.xib in Resources */,
 				FF59FA521CEC034F0027E751 /* Assets.xcassets in Resources */,
 				FF59FA501CEC034F0027E751 /* Main.storyboard in Resources */,
 			);
@@ -346,12 +379,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				3DCF721D1CF552C70093B258 /* User.m in Sources */,
 				FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */,
 				FF59FA441CEC034F0027E751 /* main.m in Sources */,
 				FF2C5F551CF5218300C9DA42 /* Course+CoreDataProperties.m in Sources */,
 				3DCF721C1CF552C70093B258 /* User+CoreDataProperties.m in Sources */,
+=======
+				FF0F3C371CFC95F20020D89A /* StackLabel.m in Sources */,
+				FF59FA471CEC034F0027E751 /* AppDelegate.m in Sources */,
+				FF59FA441CEC034F0027E751 /* main.m in Sources */,
+				FF2C5F551CF5218300C9DA42 /* Course+CoreDataProperties.m in Sources */,
+				FF88095D1CFC702000404B86 /* BrowserTableCell.m in Sources */,
+>>>>>>> Stashed changes
 				FF5224721CF4691C001FA3B6 /* CourseDirectory.xcdatamodeld in Sources */,
+				FF83B00E1CF55A4F0037FBDF /* CourseDetailViewController.m in Sources */,
 				FF59FA831CEC07A20027E751 /* CoursePlannerController.m in Sources */,
 				FF5224781CF46B1F001FA3B6 /* Course.m in Sources */,
 				FF59FA891CEC0B3C0027E751 /* HomeViewController.m in Sources */,

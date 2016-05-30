@@ -9,12 +9,15 @@
 #import "CourseBrowserController.h"
 #import "Course.h"
 #import "AppDelegate.h"
+#import "CourseDetailViewController.h"
+#import "BrowserTableCell.h"
 
 @interface CourseBrowserController() <UISearchDisplayDelegate, UISearchBarDelegate>
 
 @property (strong,nonatomic) NSArray *courses;
 @property (strong,nonatomic) NSArray *filteredCourses;
 @property (strong, nonatomic) NSFetchRequest *searchFetchRequest;
+
 
 
 @end
@@ -24,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"BrowserTableCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"BrowserTableCell"];
     
     NSManagedObjectContext *moc = [self managedObjectContext];
     
@@ -35,11 +40,35 @@
     
     NSError *error;
     self.courses = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+//    [[UIImage imageNamed:@"barImage.png"]
+//     resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch];
+    
+    [self.navigationController.navigationBar
+     setBackgroundImage:[UIImage imageNamed:@"barImage.png"]
+     forBarMetrics:UIBarMetricsDefault];
+     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    self.searchFetchRequest = nil;
+    
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    UITableViewHeaderFooterView *v = (UITableViewHeaderFooterView *)view;
+    v.backgroundView.backgroundColor = [UIColor colorWithRed:0.153 green:0.204 blue:0.243 alpha:1.00];
+    v.textLabel.textColor = [UIColor whiteColor];
+    
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 3;
 }
 
 
@@ -47,28 +76,70 @@
 {
     if (tableView == self.tableView)
     {
-        return [self.courses count];
+        //return [self.courses count];
+        return 3;
     } else {
         return [self.filteredCourses count];
     }
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:
+(NSInteger)section{
+    NSString *headerTitle;
+    if (section==0) {
+        headerTitle = @"Level 5";
+    }
+    else if(section == 1){
+        headerTitle = @"Level 6";
+    
+    }else if(section == 2){
+        headerTitle = @"Level 7";
+        
+    }
+        
+    return headerTitle;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    static NSString *tableIdentifier = @"BrowserTableCell";
+    
+    BrowserTableCell *cell = (BrowserTableCell *)[self.tableView dequeueReusableCellWithIdentifier:tableIdentifier forIndexPath:indexPath];
     
     Course *course = nil;
+    
+    if(cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"browserTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    // there are 3 courses for each level
     if (tableView == self.tableView)
     {
-        course = [self.courses objectAtIndex:indexPath.row];
+        
+        if(indexPath.section == 0)
+        {
+            course = [self.courses objectAtIndex:indexPath.row];
+
+        }else if(indexPath.section == 1)
+        {
+            course = [self.courses objectAtIndex:indexPath.row+3];
+
+        }else if(indexPath.section == 2)
+        {
+            course = [self.courses objectAtIndex:indexPath.row+6];
+            
+        }
     }
     else
     {
         course = [self.filteredCourses objectAtIndex:indexPath.row];
     }
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ ", course.name];
-    cell.detailTextLabel.text = course.identifier;
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@ ", course.name];
+    cell.idLabel.text = course.identifier;
+    cell.arrow.text = @">";
     
     return cell;
 }
@@ -85,23 +156,35 @@
     return NO;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    Course *course = nil;
-    if (self.searchDisplayController.isActive)
-    {
-        NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForCell:sender];
-        course = [self.filteredCourses objectAtIndex:indexPath.row];
-    } else {
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-        course = [self.courses objectAtIndex:indexPath.row];
-    }
     
-//    DetailViewController *detailVC = [segue destinationViewController];
-//    
-//    detailVC.managedObjectContext = self.managedObjectContext;
-//    detailVC.employee = employee;
-}
+    NSLog(@"prepareSegue");
+    Course *course = nil;
+    
+    if ([[segue identifier] isEqualToString:@"showDetail"])
+    {
+        if (self.searchDisplayController.isActive)
+        {
+            NSIndexPath *indexPath = [self.searchDisplayController.searchResultsTableView indexPathForCell:sender];
+            course = [self.filteredCourses objectAtIndex:indexPath.row];
+        } else {
+            NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+            course = [self.courses objectAtIndex:indexPath.row];
+        }
+        
+        CourseDetailViewController *courseDetail = [segue destinationViewController];
+        courseDetail.managedObjectContext = self.managedObjectContext;
+        courseDetail.course = course;
+    }
+
+
+   }
 
 - (BOOL)searchDisplayController:(UISearchController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
